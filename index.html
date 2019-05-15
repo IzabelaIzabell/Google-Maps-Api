@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CodersLab</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+  
+    
+</head>
+<body>
+  
+  <button id ="toggle">Hide panel</button>
+  <section>
+    <div class = "flex first-part show">
+  
+  <button type="button" class="btn btn-info btn-md" id="myBtn3">Show all places
+     <img src="images/1.jpg">
+  </button>
+
+  
+  
+  <!-- Modal -->
+  <div class="modal fade" id="myModal3" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4 class="modal-title">My added trip</h4>
+        </div>
+        <div class="modal-body">
+            <ul id="list">
+
+            </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <form class="form">
+    <input type="text" id="name" placeholder="Text localization name">
+    <br>
+    <input type="number" id="lat" placeholder="Add lat">
+    <br>
+    <input type="number" id="lot" placeholder="Add lot">
+    <br>
+    <br>
+    <textarea cols="50" rows="10" id ="description" placeholder="Provide your description"></textarea>
+    <br>
+    <br>
+    <input type="number" id="priority" min="1" max="5" placeholder="Select priority">
+    <br>
+    <br>
+    
+    <button type="submit" class="form-button">
+        Add new localization
+    </button>
+   
+    
+  </form>
+</div>
+
+
+
+  <div class ="flex">
+
+
+
+     
+    <div id="map"></div>
+  </div>
+  
+  </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+ 
+  <script src="js.js" async></script>
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPIxU_4NFRw4hVRB4DXAl4eKBfQ8kHNos&callback=initMap">
+  </script> 
+    
+</body>
+</html>
