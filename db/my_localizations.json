@@ -1,119 +1,44 @@
 {
   "places": [
     {
-      "id": 1,
-      "name": "Malediwy",
-      "lat": 4.1748,
-      "lon": 73.50888,
-      "description": "XXX",
-      "priority": 1
+      "name": "New York",
+      "lat": "40.7143528",
+      "lot": "-74.0059700",
+      "description": "New York description",
+      "priority": "2",
+      "id": 1
     },
     {
-      "id": 1,
-      "name": "2Malediwy",
-      "lat": 24.1748,
-      "lon": 273.50888,
-      "description": "XXX",
-      "priority": 1
-    },
-    {
-      "name": "izabelap",
-      "lat": "2",
-      "lot": "23333.1",
-      "description": "d",
-      "priority": "11",
+      "name": "Madryt Spain",
+      "lat": "40.4165000",
+      "lot": "-3.7025600",
+      "description": "Madryt description",
+      "priority": "3",
       "id": 2
     },
     {
-      "name": "izabelap",
-      "lat": "2",
-      "lot": "211.1",
-      "description": "d",
-      "priority": "1",
+      "name": "Madryt Spain",
+      "lat": "40.4165000",
+      "lot": "-3.7025600",
+      "description": "Madryt description",
+      "priority": "3",
       "id": 3
     },
     {
-      "name": "SSS",
-      "lat": "1",
-      "lot": "1",
-      "description": "SSS",
-      "priority": "1",
+      "name": "Warsaw",
+      "lat": "52.2297700",
+      "lot": "21.0117800",
+      "description": "Warsaw description",
+      "priority": "5",
       "id": 4
     },
     {
-      "name": "ww",
-      "lat": "1",
-      "lot": "1",
+      "name": "Angola",
+      "lat": "-8.8368200",
+      "lot": "13.2343200",
+      "description": "Angola description",
+      "priority": "4",
       "id": 5
-    },
-    {
-      "name": "ww",
-      "lat": "222",
-      "lot": "333",
-      "id": 6
-    },
-    {
-      "name": "ss",
-      "lat": "2",
-      "lot": "4",
-      "id": 7
-    },
-    {
-      "name": "rr",
-      "lat": "1",
-      "lot": "1",
-      "id": 8
-    },
-    {
-      "name": "s",
-      "lat": "2",
-      "lot": "2",
-      "id": 9
-    },
-    {
-      "name": "1",
-      "lat": "2",
-      "lot": "2",
-      "id": 10
-    },
-    {
-      "name": "ss",
-      "lat": "1",
-      "lot": "1",
-      "description": "descriptiondescriptiondescriptiondescriptiondescriptionss22311eee",
-      "id": 11
-    },
-    {
-      "name": "",
-      "lat": "",
-      "lot": "",
-      "description": "",
-      "priority": "",
-      "id": 12
-    },
-    {
-      "name": "",
-      "lat": "",
-      "lot": "",
-      "description": "",
-      "priority": "",
-      "id": 13
-    },
-    {
-      "name": "",
-      "lat": "",
-      "lot": "",
-      "description": "",
-      "priority": "5",
-      "id": 14
-    },
-    {
-      "name": "Local1",
-      "lat": "-56",
-      "lot": "1000",
-      "description": "Description1",
-      "priority": "1",
-      "id": 15
     }
   ]
 }
