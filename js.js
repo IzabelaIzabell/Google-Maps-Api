@@ -1,27 +1,20 @@
-
-    // Tworze zmienna mapy
+// Tworze zmienna mapy
     var mapurl = 'https://maps.googleapis.com/maps/api/js';
     var apiKey = 'AIzaSyDTMr97qDzL7NIDcafHbA8ijDW3elYl6QI';
-    
     function initMap() {
        var options = {
            zoom:3,
            center: {lat:-33,lng:-71.0589}
        }
     // //   nowa mapa
-        var map = new google.maps.Map(document.getElementById('map'), options);
-     
-
-      
-        $.ajax({
+       var map = new google.maps.Map(document.getElementById('map'), options);
+      $.ajax({
           url: "http://localhost:3000/places"
          
         }).done(function (places) {
           console.log(places)
         //   places.forEach(function (place) {
         //     console.log(place);
-            
-
         //     new google.maps.Marker({
         //       position: {LatLng:place.lat,LatLngLiteral:place.lon},
         //       map: map,
@@ -40,44 +33,17 @@
 
          var infowindow = new google.maps.InfoWindow();
          var content = (`${places[i].name} <br> ${places[i].priority}`);
-          console.log(places[i].description);
-  
-          google.maps.event.addListener(marker,'click', (function(marker,content,infowindow){ 
+         console.log(places[i].description);
+         google.maps.event.addListener(marker,'click', (function(marker,content,infowindow){ 
             return function() {
                 infowindow.setContent(content);
                 infowindow.open(map,marker);
             };
         })(marker,content,infowindow));  
-          
-
-           
-          
        
         }
-        
-      
-      
-       
-      
-       
-        
-        // ********************
-
-       
-
-
-        //***************** */
-
-    
   });
 }
-
-
-
-
-
-
-
 $(function () {
 var $nameP = $('#name');
 console.log($nameP);
@@ -86,7 +52,6 @@ var $list = $("#list")
 var $lotP = $('#lot')
 var $descP = $('#description');
 var $priorP = $("#priority");
-
 var $form= $('.form');
 var $btn = $(".form-button");
 var apiUrl =  "http://localhost:3000/places";
@@ -101,10 +66,7 @@ var apiUrl =  "http://localhost:3000/places";
       $("#myModal3").modal({backdrop: "static"});
     });
   });
-
-  
-   
-      function load() {
+ function load() {
 		$.ajax({
 			url: apiUrl
 		}).done(function (places) {
@@ -182,10 +144,7 @@ var apiUrl =  "http://localhost:3000/places";
   $showList.on('click',function(){
     $listAddedPlaces.toggleClass("hide");
   })
-
-
-
-    load();
+	load();
 });
 
 
