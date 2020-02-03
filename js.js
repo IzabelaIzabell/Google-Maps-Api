@@ -1,6 +1,6 @@
 // Tworze zmienna mapy
     var mapurl = 'https://maps.googleapis.com/maps/api/js';
-    var apiKey = 'AIzaSyDTMr97qDzL7NIDcafHbA8ijDW3elYl6QI';
+    
     function initMap() {
        var options = {
            zoom:3,
